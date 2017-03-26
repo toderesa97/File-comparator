@@ -41,11 +41,17 @@ int main(int argc, char* argv[]){
 			}
 			fd1 = open(argv[i+2],O_RDONLY);
 			fd2 = open(argv[i+3],O_RDONLY);
+			if(strcmp(argv[i+2],argv[i+3]) == 0){
+				printf("Files are the same\n");
+				i = i+3;
+				continue;
+			}
 			if(fd1 == -1 || fd2 == -1){
 				perror("");
 				i = i + 3;
 				continue;
 			}
+			
 			FILE *fp1 = fopen(argv[i+2], "rb");
 			fseek(fp1, 0, SEEK_END);
 			int l1 = ftell(fp1);
@@ -72,11 +78,17 @@ int main(int argc, char* argv[]){
 			printf("#%d operation: %s %s %s\n", operation++, argv[i], argv[i+1], argv[i+2]);	
 			fd1 = open(argv[i+1],O_RDONLY);
 			fd2 = open(argv[i+2],O_RDONLY);
+			if(strcmp(argv[i+1],argv[i+2]) == 0){
+				printf("Files are the same\n");
+				i = i+2;
+				continue;
+			}
 			if(fd1 == -1 || fd2 == -1){
 				perror("");
 				i = i + 2;
 				continue;
 			}
+			
 			
 			FILE *fp1 = fopen(argv[i+1], "rb");
 			fseek(fp1, 0, SEEK_END);
@@ -97,13 +109,22 @@ int main(int argc, char* argv[]){
 			}
 			fd1 = open(argv[i],O_RDONLY);
 			fd2 = open(argv[i+1],O_RDONLY);
-			printf("#%d operation: %s %s %s\n", operation++, argv[i], argv[i+1], argv[i+2]);
+			printf("#%d operation: %s %s\n", operation++, argv[i], argv[i+1]);
+			if(strcmp(argv[i],argv[i+1]) == 0){
+				printf("Files are the same\n");
+				i = i+1;
+				continue;
+			}
 			if(fd1 == -1 || fd2 == -1){
 				perror("");
 				i = i + 1;
 				continue;
 			}
-
+			if(fd1 == fd2) {
+				printf("Files are the same");
+				i = i + 1;
+				continue;
+			}
 			FILE *fp1 = fopen(argv[i], "rb");
 			fseek(fp1, 0, SEEK_END);
 			int l1 = ftell(fp1);
