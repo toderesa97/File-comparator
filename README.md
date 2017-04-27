@@ -13,13 +13,14 @@ gcc micmp.c -o <desire_name>
 ```
 
 Once compiled, you can choose executing the different options: (suppose we've created two files : file1.txt and file2.txt)
-(1)
+
+### (1)
 ```
 ./<desired_name> file1.txt file2.txt
 ```
 ![cmp_basic](https://cloud.githubusercontent.com/assets/19231158/25473867/fdb06528-2b28-11e7-9cfc-24c5c95c084f.png)
 
-(2)
+### (2)
 ```
 ./<desired_name> -i X:Y file1.txt file2.txt
 ```
@@ -27,7 +28,7 @@ Where X and Y represent a shift (ie, program will start comparing the file1 from
 
 ![cmp_i](https://cloud.githubusercontent.com/assets/19231158/25473868/fdb0f254-2b28-11e7-84e0-9b1cd7d05d45.png)
 
-(3)
+### (3)
 ```
 ./<desired_name> -l file1.txt file2.txt
 ```
