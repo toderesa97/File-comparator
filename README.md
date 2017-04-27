@@ -12,7 +12,7 @@ First of all what we need it's to compile micmp.c, type in terminal in the corre
 gcc micmp.c -o <desire_name>
 ```
 
-Once compiled, you can choose executing the different options: (suppose we've created two files : file1.txt and file2.txt)
+Once compiled, you can choose executing the different options: (suppose we've created two files : file1.txt and file2.txt, you can download them from this project)
 
 ### (1)
 ```
