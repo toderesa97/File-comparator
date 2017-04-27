@@ -1,3 +1,8 @@
+//**********************************************************
+// Authors: Tomás Denis Reyes Sánchez (Toderesa97)
+//          Daniel Josué Pérez Melián (dpMelian)
+//**********************************************************
+
 #include <stdio.h>
 #include <unistd.h> 
 #include <sys/types.h> 
