@@ -24,7 +24,7 @@ Once compiled, you can choose executing the different options: (suppose we've cr
 ```
 ./<desired_name> -i X:Y file1.txt file2.txt
 ```
-Where X and Y represent a shift (ie, program will start comparing the file1 from position X and file2 from Y to the end)
+Where X and Y represent a shift (ie, program will start comparing file1 from position X and file2 from Y till the end)
 
 ![cmp_i](https://cloud.githubusercontent.com/assets/19231158/25473868/fdb0f254-2b28-11e7-84e0-9b1cd7d05d45.png)
 
@@ -34,9 +34,9 @@ Where X and Y represent a shift (ie, program will start comparing the file1 from
 ```
 ![cmp_l](https://cloud.githubusercontent.com/assets/19231158/25473866/fd8a1c92-2b28-11e7-93b7-c71d3b6d7787.png)
 
-Output when two file are different... (modifying the last line of file1.txt)
+Output when two files are different... (modifying the last line of file1.txt)
 
-"...tools and technologies that allow researchers to study cells and their DNA."  modified to ...
+"...tools and technologies that allow researchers to study cells and their DNA."  ** modified to ... **
 "...tools and technologies that allow researchers to study cells and their -DNA."
 
 ```
