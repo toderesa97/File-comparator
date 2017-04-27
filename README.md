@@ -36,7 +36,10 @@ Where X and Y represent a shift (ie, program will start comparing file1 from pos
 
 Output when two files are different... (modifying the last line of file1.txt)
 
-"...tools and technologies that allow researchers to study cells and their DNA."  ** modified to ... **
+"...tools and technologies that allow researchers to study cells and their DNA."  
+
+##### modified to ...
+
 "...tools and technologies that allow researchers to study cells and their -DNA."
 
 ```
