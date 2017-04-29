@@ -61,7 +61,7 @@ Note that variation 132 is being used. Other examples of variations may be:
   1. 1131
   2. 33113
   
-If more than one variation is executed program will split them and show it in the terminal properly sorted. Try it! :-)
+If more than one variation is executed program will split and show them in the terminal properly sorted using the tag pad (#) followed by an autoincrement_id (which starts in 1), then the statement to be executed and finally the result.
 
 
 That's all.
